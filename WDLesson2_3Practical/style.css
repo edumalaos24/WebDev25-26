@@ -26,7 +26,7 @@ img{
 }
 
 /* Challenge 8: Change the height of all images with a class of "logo" to 200px*/
-.logo{
+.logo img{
     height:200px;
 }
 

@@ -25,10 +25,8 @@ function calcComp(){
       let R = parseFloat(document.getElementById("Rate").value);
       let N = parseFloat(document.getElementById("Frequency").value);
       let T = parseFloat(document.getElementById("Time").value);
-      let c = P* Math.pow*(1+(R/N),N*T);
+      let c = P*Math.pow((1+(R/100)/N),N*T);
       let op2 = document.getElementById("output2");
-      op2.innerHTML = `The compound interest is ${c}}`;
+      c = c.toFixed(2);
+      op2.innerHTML = `The compound interest is ${c}`;
 }
-
-
-

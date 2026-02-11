@@ -34,24 +34,25 @@ function area(){
 function pet(){
   let animal = document.getElementById("animal").value;
   let emotion = document.getElementById("emotion").value;
-  let op2 = document.getElementById("output2");
+  let op = document.getElementById("output2");
+  let image = ""
   if (animal == 'Bear' && emotion == 'Funny'){
-    image = <input src="funnyBear.jpg"></input>;
+    image = '<image src="funnyBear.jpg"></input>';
   }
   if (animal == 'Bear' && emotion == 'Sad'){
-    image = <input src="sadBear.jpg"></input>;
+    image = '<image src="sadBear.jpg"></input>';
   }
   if (animal == 'Cat' && emotion == 'Funny'){
-    image = <input src="funnyCat.jpg"></input>;
+    image = '<image src="funnyCat.jpg"></input>';
   }
   if (animal == 'Cat' && emotion == 'Sad'){
-    image = <input src="sadCat.jpg"></input>;
+    image = '<image src="sadCat.jpg"></input>';
   }
   if (animal == 'Dog' && emotion == 'Funny'){
-    image = <input src="funnyDog.jpg"></input>;
+    image = '<image src="funnyDog.jpg"></input>';
   }
   if (animal == 'Dog' && emotion == 'Sad'){
-    image = <input src="sadDog.jpg"></input>;
+    image = '<image src="sadDog.jpg"></input>';
   }
-  op2.innerHTML = `${image}`
+  op.innerHTML = `${image}`
 }

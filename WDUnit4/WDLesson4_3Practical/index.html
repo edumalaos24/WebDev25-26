@@ -49,11 +49,16 @@
           <tr><td>25.0 - 29.9</td><td>Overweight</td></tr>
           <tr><td>30.0 and Above</td><td>Obesity</td></tr>
         </table>
-        <a href="hhttps://www.cdc.gov/growth-chart-training/hcp/using-bmi/calculating-bmi.html"> CDC Reference </a>
+        <a href="https://www.cdc.gov/growth-chart-training/hcp/using-bmi/calculating-bmi.html"> CDC Reference </a>
         <hr>
         <!-- Challenge 1: Create the UI.  You will need to look up the formula for BMI in order to determine the number of text inputs required. -->
       </div>
-     
+      <div>
+      <input type = "text" placeholder = "Weight in Pounds" id = "weight">
+      <input type = "text" placeholder = "Height in Inches" id = "height">
+      <input type = "button" value = "Calculate BMI in Imperial" onclick = "bmi()">
+      <div id = "output"></div>
+      </div>
     </div>
     <div id="footer" class="container center">
       <h3>Lesson 4.3 Practical</h3>

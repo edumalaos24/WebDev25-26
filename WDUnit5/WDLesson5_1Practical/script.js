@@ -20,11 +20,12 @@ function calcComp(){
       let T = parseInt(document.getElementById("Time").value);
       let op = document.getElementById("output");
       let build = "";
-      let t = "";
-      for(let t = 0;t <= T; t+=1){
-        let a = P*Math.pow((1+(R/100)/N),N*T);
+      for(let yrs = 1;yrs <= T; yrs+=1){
+        let a = P*Math.pow((1+(R/100)/N),N*yrs);
         a = a.toFixed(2);
-        build += `Year ${t} is $ ${a}<br>`
-        op.innerHTML = `${build}`
+        build += `Year ${yrs} is $ ${a}<br>`
       }
+      let total = P*Math.pow((1+(R/100)/N),N*T)
+      total = total.toFixed(2);
+      op.innerHTML = `${build} Total = $${total}`;
 }

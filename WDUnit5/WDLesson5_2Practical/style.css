@@ -21,6 +21,7 @@ html, body{
 input[type="button"]{
   width:100%;
   margin-top: 10px;
+  flex-wrap:wrap;
 } 
 input[type="text"]{
   width:124px;
@@ -33,15 +34,23 @@ input[type="text"]{
   border-radius:10px;
   box-shadow:2px 2px 2px black;
   /* Challenge 4: Set the flex to 0 0 150px */
-
+  flex: 0 0 150px;
 }
 
 /* Challenge 5: Create CSS class rule named pizza to used with the pizza images
             1) Provide an appropriate width and height for the image
             2) Set object-fit to cover;
 */
+.pizza{
+  height:250PX;
+  width:250PX;
+  object-fit:cover;
+}
 
 /* Challenge 6: Create CSS class rule named title to used with the title images.  
                 Set height to an appropriate size
 
 */
+.title{
+  height: 50px;
+}

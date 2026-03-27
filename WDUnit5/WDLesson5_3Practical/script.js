@@ -11,8 +11,19 @@
 */
 
 function balance(){
-
-
+        let P = parseFloat(document.getElementById("p").value);
+        let R = parseFloat(document.getElementById("r").value);
+        let N = 1;
+        let T = parseInt(document.getElementById("t").value);
+        let output = document.getElementById("output");
+        let build = "<table><tr><th>Years</th><th>Balance</h>";
+        for(let yrs = 0;yrs <= T;yrs ++){
+                let a = P*Math.pow((1+(R/100)/N),N*yrs);
+                a = a.toFixed(2);
+                build += `<tr><td>${yrs}</td><td>$${a}</td>`;
+        }
+        build += "</table>";
+        output.innerHTML = build;
 }
 
 /* Challenge Bonus: Allow the user to enter n.  This will require you to modify,
@@ -20,7 +31,7 @@ function balance(){
         2) Modify the formula to incorporate the value of n
         3) Adjust the heading reflect the compound length.  Below are some typical lengths
               a. n = 1 then the interest is compounded yearly
-              b. n = 12 then the interest is compounded monthly
-              c. n = 3 then the interest is compounded quarterly
-              d. n = 2 then the interest is compounded bi-yearly
-*/ 
+              b. n = 4 then the interest is compounded quarterly
+              c. n = 12 then the interest is compounded monthly
+
+*/

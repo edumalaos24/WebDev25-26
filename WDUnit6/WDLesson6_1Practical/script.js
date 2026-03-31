@@ -57,7 +57,7 @@ function init(){
       3) Create a basic card with a title, image and price.
   */
 
-  //Challenge 4:  Build cards for the meats. Place the build in the meat container. 
+  //Challenge 4:  Build cards for the meats. Place the build in the meat container.
 
   //Challenge 5:  Build cards for the seafoods. Place the build in the seafood container.
 

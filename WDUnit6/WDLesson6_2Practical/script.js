@@ -32,12 +32,7 @@ function artist(){
   <h1> ${artist.name}</h1>
   <img src = "${artist.image}">
   <h2> ${artist.album}</h2>
-  <a href = "${artist.url}">
+  <a href = "${artist.url}">Link</a>
   `
   output.innerHTML = build;
 }
-
-
-
-
-

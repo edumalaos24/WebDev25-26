@@ -13,8 +13,9 @@ async function init(){
     build += `<div class="fitted card">
                  <h3>${crash.borough}</h3>
                     <hr>
-                    <p>ZIP Code: ${crash.zip_code}</p>
-                    <p>Street: ${crash.on_street_name}</p>
+                    <p>${crash.crash_date}</p>
+                    <p>ZIP: ${crash.zip_code}</p>
+                    <p>${crash.on_street_name}</p>
                     <p>Killed: ${crash.number_of_persons_killed}</p>
                     <p>Injured: ${crash.number_of_persons_injured}</p>
                     <hr>
@@ -40,8 +41,9 @@ function filterByCrashDate(){
       build += `<div class="fitted card">
                     <h3>${crash.borough}</h3>
                     <hr>
-                    <p>ZIP Code: ${crash.zip_code}</p>
-                    <p>Street: ${crash.on_street_name}</p>
+                    <p>${crash.crash_date}</p>
+                    <p>ZIP: ${crash.zip_code}</p>
+                    <p>${crash.on_street_name}</p>
                     <p>Killed: ${crash.number_of_persons_killed}</p>
                     <p>Injured: ${crash.number_of_persons_injured}</p>
                     <hr>
@@ -66,8 +68,9 @@ function filterByBorough(){
       build += `<div class="fitted card">
                     <h3>${crash.borough}</h3>
                     <hr>
-                    <p>ZIP Code: ${crash.zip_code}</p>
-                    <p>Street: ${crash.on_street_name}</p>
+                    <p>${crash.crash_date}</p>
+                    <p>ZIP: ${crash.zip_code}</p>
+                    <p>${crash.on_street_name}</p>
                     <p>Killed: ${crash.number_of_persons_killed}</p>
                     <p>Injured: ${crash.number_of_persons_injured}</p>
                     <hr>
@@ -94,8 +97,9 @@ function filterByZIP_Code(){
       build += `<div class="fitted card">
                     <h3>${crash.borough}</h3>
                     <hr>
-                    <p>ZIP Code: ${crash.zip_code}</p>
-                    <p>Street: ${crash.on_street_name}</p>
+                    <p>${crash.crash_date}</p>
+                    <p>ZIP: ${crash.zip_code}</p>
+                    <p>${crash.on_street_name}</p>
                     <p>Killed: ${crash.number_of_persons_killed}</p>
                     <p>Injured: ${crash.number_of_persons_injured}</p>
                     <hr>
@@ -123,8 +127,9 @@ function filterByStreetName(){
       build += `<div class="fitted card">
                     <h3>${crash.borough}</h3>
                     <hr>
-                    <p>ZIP Code: ${crash.zip_code}</p>
-                    <p>Street: ${crash.on_street_name}</p>
+                    <p>${crash.crash_date}</p>
+                    <p>ZIP: ${crash.zip_code}</p>
+                    <p>${crash.on_street_name}</p>
                     <p>Killed: ${crash.number_of_persons_killed}</p>
                     <p>Injured: ${crash.number_of_persons_injured}</p>
                     <hr>
@@ -150,8 +155,9 @@ function filterByNumberOfPersonsKilled(){
       build += `<div class="fitted card">
                     <h3>${crash.borough}</h3>
                     <hr>
-                    <p>ZIP Code: ${crash.zip_code}</p>
-                    <p>Street: ${crash.on_street_name}</p>
+                    <p>${crash.crash_date}</p>
+                    <p>ZIP: ${crash.zip_code}</p>
+                    <p>${crash.on_street_name}</p>
                     <p>Killed: ${crash.number_of_persons_killed}</p>
                     <p>Injured: ${crash.number_of_persons_injured}</p>
                     <hr>
@@ -177,8 +183,9 @@ function filterByNumberOfPersonsInjured(){
       build += `<div class="fitted card">
                     <h3>${crash.borough}</h3>
                     <hr>
-                    <p>ZIP Code: ${crash.zip_code}</p>
-                    <p>Street: ${crash.on_street_name}</p>
+                    <p>${crash.crash_date}</p>
+                    <p>ZIP: ${crash.zip_code}</p>
+                    <p>${crash.on_street_name}</p>
                     <p>Killed: ${crash.number_of_persons_killed}</p>
                     <p>Injured: ${crash.number_of_persons_injured}</p>
                     <hr>

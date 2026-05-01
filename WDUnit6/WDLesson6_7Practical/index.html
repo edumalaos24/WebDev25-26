@@ -21,8 +21,7 @@
         <p>This practical challenges students to provide various ways to filter  
           Motor Vehicle Complaint (Complaints) retrieved from NYC Open Data.</p>
         <a class="button" href="https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data</a> 
-        <a class="button" target="_blank" href="https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data"
-"> Motor Vehicle Collisions/a>
+        <a class="button" target="_blank" href="https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data""> Motor Vehicle Collisions/a>
         <a class="button" target="_blank" href="https://jsoneditoronline.org/"> JSON Editor Online</a>
        </div>
     </div>
@@ -41,9 +40,16 @@
 
         <div class="card">
           <h3>SEARCH By Borough</h3>
-          <input type="text" id="borough" placeholder="Enter Borough (all CAPS)">
-          <hr></hr>
-          <a class="button" onclick="filterByBorough()"> Search </a>
+          <select id="borough">
+            <option disabled>Select Borough</option>
+            <option>MANHATTAN</option>
+            <option>QUEENS</option>
+            <option>BROOKLYN</option>
+            <option>BRONX</option>
+            <option>STATEN ISLAND</option>
+            <hr>
+          <input class="button" onclick="filterByBorough()" value = "Search">
+        </select>
         </div>
         
         <div class="card">

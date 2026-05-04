@@ -24,6 +24,7 @@ async function init(){
   output.innerHTML = build;
 }
 
+
 function filterByCrashDate(){
   let output = document.getElementById("output");
   let crashyear = document.getElementById("crash_year");
@@ -180,6 +181,35 @@ function filterByNumberOfPersonsInjured(){
   for(let i = 0; i < data.length; i+=1){
     let crash = data[i];
     if(crash.number_of_persons_injured == number_of_persons_injured){
+      build += `<div class="fitted card">
+                    <h3>${crash.borough}</h3>
+                    <hr>
+                    <p>${crash.crash_date}</p>
+                    <p>ZIP: ${crash.zip_code}</p>
+                    <p>${crash.on_street_name}</p>
+                    <p>Killed: ${crash.number_of_persons_killed}</p>
+                    <p>Injured: ${crash.number_of_persons_injured}</p>
+                    <hr>
+                </div>`;
+      ct += 1;
+    }
+  }
+  result.innerHTML = `${ct} Results found.`
+  output.innerHTML = build;
+}
+
+function filterByBoroughandByNumberOfPersonsKilled(){
+  let output = document.getElementById("output");
+  let borough = document.getElementById("borough2").value;
+  let number_of_persons_killed = document.getElementById("number_of_persons_killed2").value;
+  let result = document.getElementById("result");
+  
+  let build = "";
+  let ct = 0;
+
+  for(let i = 0; i < data.length; i+=1){
+    let crash = data[i];
+    if(crash.number_of_persons_killed == number_of_persons_killed && crash.borough == borough){
       build += `<div class="fitted card">
                     <h3>${crash.borough}</h3>
                     <hr>

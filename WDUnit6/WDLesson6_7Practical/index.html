@@ -68,7 +68,7 @@
 
         <div class="card">
           <h3>SEARCH By Number of People Killed</h3>
-          <input type="text" id="number_of_persons_killed" placeholder="Number of People Killed">
+          <input type="text" id="number_of_persons_killed" placeholder="Enter Number of People Killed">
           <hr></hr>
           <a class="button" onclick="filterByNumberOfPersonsKilled()"> Search </a>
         </div>
@@ -78,6 +78,21 @@
           <input type="text" id="number_of_persons_injured" placeholder="Enter Number of People Injured">
           <hr></hr>
           <a class="button" onclick="filterByNumberOfPersonsInjured()"> Search </a>
+        </div>
+
+        <div class = "card">
+          <h3>SEARCH By Borough & Number of People Killed</h3>
+          <input type="text" id="number_of_persons_killed2" placeholder="Enter Number of People Killed">
+          <select id="borough2">
+            <option disabled>Select Borough</option>
+            <option>MANHATTAN</option>
+            <option>QUEENS</option>
+            <option>BROOKLYN</option>
+            <option>BRONX</option>
+            <option>STATEN ISLAND</option>
+            <hr>
+          <input class="button" onclick="filterByBoroughandByNumberOfPersonsKilled()()" value = "Search">
+
         </div>
 
 
